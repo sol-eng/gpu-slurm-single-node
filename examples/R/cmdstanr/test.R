@@ -6,7 +6,7 @@ cmdstanr::install_cmdstan()
 
 # set OpenCL flag for compilation
 cpp_options = list(
-  "LDFLAGS+= -lOpenCL"
+  "LDFLAGS+= -L  /usr/local/cuda-12.4/lib64/ -lOpenCL"
 )
 
 # rebuild cmdstan with OpenCL enabled
